@@ -25,6 +25,7 @@ class Widget(QWidget):
         layout.addWidget(QLabel("Nome:"))
         layout.addWidget(self.campo_nome)
 
+
         # LineEdit com o modo senha (Esconder os caracteres)
         self.campo_senha = QLineEdit()
         self.campo_senha.setPlaceholderText("Senha...")
@@ -42,5 +43,3 @@ if __name__ == '__main__':
     window = Widget()
     window.show()
     sys.exit(app.exec_())
-
-
