@@ -1,14 +1,5 @@
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QSlider, QFileDialog, QStyle)
 
-# Criar a aplicação
-app = QApplication(sys.argv)
-
-#Criar janela principal
-janela = QMainWindow()
-janela.setWindowTitle("Minha Primeiro Janela no Pyside6")
-janela.resize(800, 600)
-janela.show()
-
-# iniciar o loop de eventos (A aplicação fica viva aqui!)
-sys.exit(app.exec_())
+from PySide6.QtCore import Qt, QUrl
+from PySide6.QtMultimedia import QMediaPlayer, QAudioOutput
